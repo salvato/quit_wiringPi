@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <wiringPi.h>
+#include <QThread>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -60,7 +61,14 @@ MainWindow::on_lowButton_clicked() {
 }
 
 
-void __attribute__((noreturn))
+void
 MainWindow::on_quitButton_clicked() {
-    exit(EXIT_SUCCESS);
+    ui->statusBar->showMessage("Quit Button Pressed", 2000);
+//    exit(EXIT_SUCCESS);
+}
+
+void
+MainWindow::on_actionQuit_triggered() {
+    ui->statusBar->showMessage("File Quit menu activated", 2000);
+//    exit(EXIT_SUCCESS);
 }

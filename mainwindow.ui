@@ -104,8 +104,9 @@
    </property>
    <widget class="QMenu" name="menuPress_Quit_to_terminate">
     <property name="title">
-     <string>press &quot;Quit&quot; to terminate</string>
+     <string>File</string>
     </property>
+    <addaction name="actionQuit"/>
    </widget>
    <addaction name="menuPress_Quit_to_terminate"/>
   </widget>
@@ -118,25 +119,13 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections>
-  <connection>
-   <sender>quitButton</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>234</x>
-     <y>240</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>260</x>
-     <y>229</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

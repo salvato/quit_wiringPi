@@ -23,6 +23,7 @@ private slots:
     void on_lowButton_clicked();
     void on_quitButton_clicked();
     void onUpdateTime();
+    void on_actionQuit_triggered();
 
 private:
     Ui::MainWindow *ui;
